@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "b57a2331-50c3-4432-9980-3d68d04b61e0",
+		"name": "Authenticate Learning",
+		"description": "Use for lmint authenticate learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "lmint@coders.tokyo",
+							"description": "Register user email",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abc@123",
+							"description": "Create new user's password",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "abc@123",
+							"description": "Confirm new user's password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/signup",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "e0c75649-1bcd-4aa9-8dcc-7b9f82ba649d",
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
